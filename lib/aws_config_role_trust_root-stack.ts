@@ -5,8 +5,6 @@ export class AwsConfigRoleTrustRootStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    // The code that defines your stack goes here
-
     new lambda.Function(this, 'config-rule-root-trust-lambda',{
       handler: 'index.handler',
       runtime: lambda.Runtime.NodeJS810,
