@@ -1,0 +1,3 @@
+{
+  "app": "node bin/aws_config_role_trust_root.js"
+}
